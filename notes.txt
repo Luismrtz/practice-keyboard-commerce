@@ -1,0 +1,56 @@
+1).  so redux test is done.
+
+2) hold off on that note.
+
+3) DESIGN
+    a) Pick up how to do onscroll Designs
+    b)  find a good wireframe to build off off
+    c)  USE material ui
+    d)  Add a carousel/ react-slick
+    e)  MAYBE a package for onscroll animations
+    f) LOOK UP SOME GOOD TYPOGRAPHY Designs
+    G)  
+
+4)  components / HOME PAGE
+
+    a) NAVBAR:  with TOP onscroll changes
+
+    b) HEADER: with type of animation maybe? Should I make it a carousel
+
+    c) Carousel AND/OR head straight to the products (based in a grid)
+
+    d) BLOCK display page of navigations,  (like 1st eccomerce site)
+
+    e) The products (based in a grid)
+
+    f) Footer
+
+5) components / 
+
+
+
+
+
+Notes about WEBSITE:::
+
+BEGINNING GAME ():
+    keyboards, keycaps, accessories,
+
+
+END GAME () :
+    keeboards.
+    keycaps. 
+    3d printing services. 
+    Chingos of mini parts ( sold via contract form another source )
+
+
+
+
+keyboards/ keycaps/ 
+
+keyboard parts  --> 
+
+Accessories --> 
+
+
+3d printing services
