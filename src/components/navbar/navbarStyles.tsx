@@ -4,6 +4,68 @@ import { makeStyles, fade } from '@material-ui/core/styles';
 const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
+
+    list: {
+        width: 250,
+      },
+      fullList: {
+        width: 'auto',
+      },
+
+
+
+
+
+
+      toolbar: theme.mixins.toolbar,
+ 
+      emptyButton: {
+        minWidth: '150px',
+        [theme.breakpoints.down('xs')]: {
+          marginBottom: '5px',
+        },
+        [theme.breakpoints.up('xs')]: {
+          marginRight: '20px',
+        },
+      },
+      checkoutButton: {
+        minWidth: '150px',
+      },
+      link: {
+        textDecoration: 'none',
+      },
+      cardDetails: {
+        display: 'flex',
+        marginTop: '10%',
+        width: '100%',
+        justifyContent: 'space-between',
+      },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
     appBar: {
         boxShadow: 'none',
         borderBottom: '1px solid rgba(0,0,0,0.12)',

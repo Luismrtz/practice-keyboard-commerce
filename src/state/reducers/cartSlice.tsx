@@ -8,6 +8,7 @@ import {CartType, cartInitialStateType, CartActionType} from "../type"
 const initialState: cartInitialStateType = {
     
     cart: {
+        //based on commerce prop/prototypes.
         id: null,
         subtotal: null,
         total_items: null,
