@@ -43,17 +43,15 @@ export const addToCart = (productId: string, quantity: number) => async (dispatc
 
 }
 
-// export const UpdateCartQuantity = (productId: string, quantity: number) => async (dispatch: Dispatch<CartActionType>) => {
-//     const { cart } = await commerce.cart.update(productId, { quantity })
-//     dispatch(setCart(cart))
+export const UpdateCartQuantity = (productId: string, quantity: number) => async (dispatch: Dispatch<CartActionType>) => {
+    const { cart } = await commerce.cart.update(productId, { quantity })
+    dispatch(setCart(cart))
+}
 
-// }
-
-// export const removeCart = (productId: string) => async (dispatch: Dispatch<CartActionType>) => {
-//     const { cart } = await  commerce.cart.remove(productId)
-//     dispatch(setCart(cart))
-
-// }
+export const removeCartItem = (productId: string) => async (dispatch: Dispatch<CartActionType>) => {
+    const { cart } = await  commerce.cart.remove(productId)
+    dispatch(setCart(cart))
+}
 
 
 
@@ -68,7 +66,7 @@ export const addToCart = (productId: string, quantity: number) => async (dispatc
 // }
 
 
-export const EmptyCart = () => async (dispatch: Dispatch<CartActionType>) => {
+export const deleteCart = () => async (dispatch: Dispatch<CartActionType>) => {
     const { cart } = await  commerce.cart.empty()
     dispatch(setCart(cart))
     

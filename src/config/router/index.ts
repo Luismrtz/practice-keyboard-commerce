@@ -1,4 +1,5 @@
 import HomePage from '../../pages/home'
+import CheckoutPage from '../../pages/checkoutPage'
 
 export interface IRoute {
     path: string;
@@ -15,6 +16,12 @@ export const routes: IRoute[] = [
         name: 'Home',
         component: HomePage,
         exact: true
+    },
+    {
+        path: '/checkout',
+        name: 'Checkout',
+        component: CheckoutPage,
+        exact: false
     },
 
 ]

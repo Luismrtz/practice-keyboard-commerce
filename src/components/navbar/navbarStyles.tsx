@@ -5,8 +5,21 @@ const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
 
+
+
     list: {
-        width: 250,
+        width: 450,
+        // overflow:'hidden',
+        position:'relative',
+        height: '100%',
+
+        [theme.breakpoints.down('sm')]: {
+          width: 400,
+        },
+        [theme.breakpoints.down('xs')]: {
+          width: 'auto',
+        },
+
       },
       fullList: {
         width: 'auto',
@@ -36,7 +49,8 @@ export default makeStyles((theme) => ({
       },
       cardDetails: {
         display: 'flex',
-        marginTop: '10%',
+        flexDirection: 'column',
+        marginTop: '5rem',
         width: '100%',
         justifyContent: 'space-between',
       },
@@ -79,6 +93,10 @@ export default makeStyles((theme) => ({
         alignItems: 'center',
         display: 'flex',
         textDecoration: 'none',
+        [theme.breakpoints.down('xs')]: {
+          // whiteSpace: 'nowrap',
+          // fontSize: '1.7rem',
+        },
     },
     image: {
         marginRight: '10px',

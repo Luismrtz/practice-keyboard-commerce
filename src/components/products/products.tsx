@@ -9,7 +9,7 @@ import {RootState} from "../../state/store";
 import {fetchProducts} from "../../state/redux-toolkit";
 import { Button } from '@material-ui/core';
 
-import { EmptyCart, fetchCart } from '../../state/reducers/cartSlice';
+import { fetchCart } from '../../state/reducers/cartSlice';
 
 
 //TODO !! CHANGE THE CSS NAMES
@@ -50,7 +50,7 @@ const Products: FC = () => {
                     <Product product={product}/>
                 </Grid>)}
             </Grid>
-            <Button variant="contained" color="secondary" onClick={() => dispatch((EmptyCart()))}>DELETE</Button>
+
         </main>
     )
 }
