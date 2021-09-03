@@ -41,7 +41,7 @@ const CartItem: FC<PropType> = ({item, displayForNavbar}) => {
             <div className={classes.buttonNav}>
                 <Button type="button" size="small" onClick={() => dispatch(UpdateCartQuantity(item.id, item.quantity - 1))}>-</Button>
                 <Typography>{item.quantity}</Typography>
-                <Button type="button" size="small" onClick={() => dispatch(UpdateCartQuantity(item.id, item.quantity + 1))}>+</Button>
+                <Button type="button" size="small" data-mui-cy="addQuantityInNavCart" onClick={() => dispatch(UpdateCartQuantity(item.id, item.quantity + 1))}>+</Button>
             </div>
             <Button variant="contained" type="button" color="secondary" onClick={() => dispatch(removeCartItem(item.id))}>Remove</Button>
         </div>

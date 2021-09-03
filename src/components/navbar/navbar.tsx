@@ -131,6 +131,7 @@ const FilledCart: FC<PropTypeCart> = ({cart}) => (
                     <div className={classes.grow} />
                     <div className={classes.menuButton} 
                     // onClick={toggleCartFeature} 
+                    data-mui-cy="testnav"
                     onClick={toggleDrawer(anchor, true)}
                      >
                         <IconButton aria-label="Show cart items" color="inherit">

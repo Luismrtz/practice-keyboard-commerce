@@ -38,7 +38,7 @@ const Product: FC<Props> = ({product}) => {
                 <Typography dangerouslySetInnerHTML={{ __html: sanitizer(product.description) }} variant="body2" color="textSecondary" component="p" />
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
-                <IconButton aria-label="Add to Cart" onClick={() => dispatch(addToCart(product.id, 1))} >
+                <IconButton   data-mui-cy="testAddToCart" aria-label="Add to Cart" onClick={() => dispatch(addToCart(product.id, 1))} >
                     <AddShoppingCart />
                 </IconButton>
             </CardActions>
