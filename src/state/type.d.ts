@@ -40,3 +40,36 @@ export type cartInitialStateType = {
 
 export type CartActionType = ReturnType<typeof setCart>
 
+
+
+
+//? Address
+export type AddressStateType = {
+    countries: selectAddressType<string, string> | null ,
+    token: TokenType | null,
+    country: string | null
+
+}
+
+export type selectAddressType<key, value> = {
+    key: value
+}
+
+
+// export type selectAddressResponseType = {
+//     countries: SelectFieldDataType<string, string>
+//     html: HTMLElement
+// }
+
+
+export type TokenType = {
+    id: string
+}
+
+
+
+
+export type AddressActionType = ReturnType<typeof setToken> |
+                                ReturnType<typeof setShippingCountries> |
+                                ReturnType<typeof setShippingCountry>
+                    

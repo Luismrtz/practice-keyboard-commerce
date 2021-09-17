@@ -1,5 +1,6 @@
 import { configureStore, getDefaultMiddleware, combineReducers } from '@reduxjs/toolkit'
 import { cartSlice } from './reducers/cartSlice';
+import { fetchAddressSlice } from './reducers/fetchAddressSlice';
 import { 
     productsSlice,
     //* test for multiple default export
@@ -25,6 +26,7 @@ export const store = configureStore({
         products: productsSlice.reducer,
         //* test for multiple default export
         // p: psSlice.reducer
+        addressData: fetchAddressSlice.reducer,
         cart: cartSlice.reducer
     },
     // middleware: [...getDefaultMiddleware({})]

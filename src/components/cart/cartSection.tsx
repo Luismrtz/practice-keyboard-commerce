@@ -11,12 +11,11 @@ import { CartType } from '../../state/type';
 import { deleteCart } from '../../state/reducers/cartSlice';
 import { Link } from 'react-router-dom';
 
-
 const CartSection = () => {
     const classes = useStyles();
     const dispatch = useAppDispatch();
     const { cart } = useAppSelector((state: RootState) => state.cart)
-
+    // const token = useAppSelector((state: RootState) => state.addressData.token)
     
     useEffect(() => {
         dispatch(fetchCart());
@@ -58,6 +57,8 @@ const CartSection = () => {
     //       window.removeEventListener("resize", handleWindowResize);
     //     };
     //   }, [sort]);
+
+    // console.log(token,'test')
 
 
 
