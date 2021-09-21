@@ -1,8 +1,8 @@
-## Project Name & Pitch
+## Project Name
 
 #### Example:
 
-Kafka-store-frontend
+Practice Keyboard Commerce
 
 A frontend application built with React, Redux toolkit, Typescript, and Material-UI.
 
